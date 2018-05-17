@@ -96,6 +96,14 @@
                                     <segue destination="w9e-EB-ggc" kind="unwind" unwindAction="returnMain1WithSegue:" id="VHD-g7-9Gb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRi-bL-o8e">
+                                <rect key="frame" x="46" y="200" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="처음으로"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="XZU-ex-jHB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2Jo-yZ-L01"/>

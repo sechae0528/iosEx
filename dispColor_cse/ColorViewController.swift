@@ -53,6 +53,14 @@ class ColorViewController: UIViewController {
     
     @IBAction func returnMain1(segue: UIStoryboardSegue){
         print("Returned2")
+        colorR = randomSource.nextInt(upperBound: 256)
+        colorG = randomSource.nextInt(upperBound: 256)
+        colorB = randomSource.nextInt(upperBound: 256)
+        colorRed = colorR
+        colorGreen = colorG
+        colorBlue = colorB
+//        let backColor = UIColor(red: CGFloat(colorRed) / 256.0, green: CGFloat(colorGreen) / 256.0, blue: CGFloat(colorBlue) / 256.0, alpha: 1.0)
+//        view.backgroundColor = backColor
     }
 
    
