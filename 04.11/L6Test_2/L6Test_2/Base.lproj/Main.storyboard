@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="L6Test_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1A-sC-O5O">
+                                <rect key="frame" x="16" y="45" width="305" height="30"/>
+                                <color key="backgroundColor" red="0.92754326530403053" green="1" blue="0.19712680614243494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="사파리 브라우저 호출">
+                                    <color key="titleShadowColor" red="0.94281262259999998" green="1" blue="0.1528188509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSH-nP-OSt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLv-uZ-klj">
+                                <rect key="frame" x="16" y="105" width="108" height="30"/>
+                                <state key="normal" title="이미지 불러오기..."/>
+                                <connections>
+                                    <action selector="imgLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lns-i5-NYO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="055-9d-dxc">
+                                <rect key="frame" x="16" y="165" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="hk2-EJ-Ss8"/>
+                                    <constraint firstAttribute="width" constant="240" id="whY-e7-ec9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghi-Ig-c7i">
+                                <rect key="frame" x="16" y="323" width="95" height="30"/>
+                                <state key="normal" title="텍스트 불러오기"/>
+                                <connections>
+                                    <action selector="textLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6g-zw-CRY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z1A-sC-O5O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="BPf-Ef-ops"/>
+                            <constraint firstItem="055-9d-dxc" firstAttribute="leading" secondItem="Z1A-sC-O5O" secondAttribute="leading" id="BVo-7E-Qlt"/>
+                            <constraint firstItem="Ghi-Ig-c7i" firstAttribute="leading" secondItem="Z1A-sC-O5O" secondAttribute="leading" id="CWQ-Kh-esT"/>
+                            <constraint firstItem="vLv-uZ-klj" firstAttribute="leading" secondItem="Z1A-sC-O5O" secondAttribute="leading" constant="30" id="bhv-ug-Nbc"/>
+                            <constraint firstItem="055-9d-dxc" firstAttribute="top" secondItem="vLv-uZ-klj" secondAttribute="bottom" constant="30" id="ch4-Iw-jZ3"/>
+                            <constraint firstItem="vLv-uZ-klj" firstAttribute="top" secondItem="Z1A-sC-O5O" secondAttribute="bottom" constant="30" id="pxM-hV-vRc"/>
+                            <constraint firstItem="Ghi-Ig-c7i" firstAttribute="top" secondItem="055-9d-dxc" secondAttribute="bottom" constant="30" id="wJU-0B-Rr8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="055-9d-dxc" id="LVk-oC-Yda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

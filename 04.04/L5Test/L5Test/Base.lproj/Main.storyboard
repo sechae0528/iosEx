@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="L5Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock.png" translatesAutoresizingMaskIntoConstraints="NO" id="uuy-Lb-5dF">
+                                <rect key="frame" x="112.5" y="278" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Zf5-Na-dp3"/>
+                                    <constraint firstAttribute="height" constant="150" id="eK4-1f-tJS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper.png" translatesAutoresizingMaskIntoConstraints="NO" id="IQe-Oh-L24">
+                                <rect key="frame" x="112.5" y="120" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3gu-C8-Qag"/>
+                                    <constraint firstAttribute="width" constant="150" id="uWO-Ro-dNs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가위 바위 보" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dN-Y0-kLx">
+                                <rect key="frame" x="146.5" y="55" width="82.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dsq-mn-KAI">
+                                <rect key="frame" x="62.5" y="473" width="250" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSJ-qE-IW4">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="30"/>
+                                        <color key="backgroundColor" red="0.12886091860000001" green="0.49025791870000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="가위">
+                                            <color key="titleColor" red="0.98567327687484929" green="1" blue="0.93582391047032476" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-ED-INV">
+                                        <rect key="frame" x="83.5" y="0.0" width="83" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.4925923982" blue="0.45557002520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="바위"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l78-gb-yUi">
+                                        <rect key="frame" x="166.5" y="0.0" width="83.5" height="30"/>
+                                        <color key="backgroundColor" red="0.93158049577122082" green="1" blue="0.10268958540920137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="보">
+                                            <color key="titleColor" red="0.12886091860000001" green="0.49025791870000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="s0T-Ky-6ob"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IQe-Oh-L24" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="h45-5s-UC8"/>
+                            <constraint firstItem="IQe-Oh-L24" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="khF-bt-U0V"/>
+                            <constraint firstItem="Dsq-mn-KAI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nxp-gB-Vbo"/>
+                            <constraint firstItem="9dN-Y0-kLx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q9O-uW-E6V"/>
+                            <constraint firstItem="Dsq-mn-KAI" firstAttribute="top" secondItem="uuy-Lb-5dF" secondAttribute="bottom" constant="45" id="rhk-Y9-5L7"/>
+                            <constraint firstItem="9dN-Y0-kLx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="sgF-bx-Roi"/>
+                            <constraint firstItem="uuy-Lb-5dF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wj4-I9-EHR"/>
+                            <constraint firstItem="uuy-Lb-5dF" firstAttribute="top" secondItem="IQe-Oh-L24" secondAttribute="bottom" constant="8" id="wkQ-eg-dRe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper.png" width="450" height="450"/>
+        <image name="rock.png" width="450" height="450"/>
+    </resources>
+</document>
